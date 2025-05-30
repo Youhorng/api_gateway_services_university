@@ -5,7 +5,7 @@ const app = express()
 const httpProxy = require('http-proxy')
 const proxy = httpProxy.createProxyServer();
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
     console.log("INSIDE API GATEWAY STUDENT ROUTE")
 })
 
