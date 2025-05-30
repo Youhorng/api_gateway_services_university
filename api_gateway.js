@@ -6,7 +6,7 @@ const httpProxy = require('http-proxy')
 const proxy = httpProxy.createProxyServer();
 
 app.get('/', (req, res) => {
-    console.log("INSIDE API GATEWAY STUDENT ROUTE")
+    console.log("INSIDE API GATEWAY ")
 })
 
 //REDIRECT TO THE STUDENT MICROSERVICE
