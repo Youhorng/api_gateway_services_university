@@ -5,6 +5,10 @@ const app = express()
 const httpProxy = require('http-proxy')
 const proxy = httpProxy.createProxyServer();
 
+app.use('/', (req, res) => {
+    console.log("INSIDE API GATEWAY STUDENT ROUTE")
+})
+
 //REDIRECT TO THE STUDENT MICROSERVICE
 app.use('/student', (req, res) => {
     console.log("INSIDE API GATEWAY STUDENT ROUTE")
